@@ -1,4 +1,4 @@
-module.export = {
+module.exports = {
   entry: [
     './source/App.js'
   ],
@@ -9,7 +9,10 @@ module.export = {
   module: {
     loaders: [{
       test: /\.jsx?$/,
-      loader: 'babel'
+      loader: 'babel',
+      query: {
+        presets: ['react', 'es2015']
+      }
     }]
   }
 };
