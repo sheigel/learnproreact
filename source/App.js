@@ -1,6 +1,6 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-
+// Hello world
 class Hello extends Component {
   render() {
     var place = 'World';
