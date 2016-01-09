@@ -1,14 +1,29 @@
 import React, { Component } from 'react';
 import ReactDOM from 'react-dom';
-// Hello world
-class Hello extends Component {
+
+// Grocery App
+// Parent Component
+class GroceryList extends Component {
   render() {
-    var place = 'World';
     return (
-      <h1>Hello {place}</h1>
+      <ul>
+        <ListItem quantity="1" name="Bread" />
+        <ListItem quantity="6" name="Eggs" />
+        <ListItem quantity="2" name="Milk" />
+      </ul>
     );
   }
 }
 
+//Child Component
+class ListItem extends Component {
+  render() {
+    return (
+      <li>
+        {this.props.quantity} × {this.props.name}
+      </li>
+    );
+  }
+}
 
-ReactDOM.render(<Hello/>, document.getElementById('root'));
+ReactDOM.render(<GroceryList />, document.getElementById('root'));

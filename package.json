@@ -9,7 +9,8 @@
   "author": "Andrei Gherghel",
   "license": "ISC",
   "dependencies": {
-    "react": "^0.14.5"
+    "react": "^0.14.6",
+    "react-dom": "^0.14.6"
   },
   "devDependencies": {
     "babel-core": "^6.3.26",
@@ -17,7 +18,6 @@
     "babel-preset-es2015": "^6.3.13",
     "babel-preset-react": "^6.3.13",
     "babel-preset-stage-0": "^6.3.13",
-    "react-dom": "^0.14.6",
     "webpack": "^1.12.10",
     "webpack-dev-server": "^1.14.0"
   }
