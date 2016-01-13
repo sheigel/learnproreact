@@ -24,7 +24,6 @@ let cardsList = [
       {
         id: 2,
         name: "Kanban Example",
-        done: false
       },
       {
         id: 3,
